@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Zeyada&display=swap");
+
+body {
+  background: url(../image/map\ image.png);
+  scroll-behavior: smooth;
+}
+/* hero section css style */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+
+/* hero section content */
+.hero .content {
+  width: 450px;
+}
+
+.hero .content h6 {
+  font-family: "Zeyada", cursive;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn i {
+  font-size: 15px;
+}
+
+.hero .content h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.hero .benner-image .circel {
+  width: 150px;
+  height: 150px;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero .benner-image .circel img {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .content {
+    width: 100%;
+  }
+}

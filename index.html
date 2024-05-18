@@ -9,6 +9,11 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.css"
     />
+    <!-- Bootstrap Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <!--  CSS File link  -->
     <link rel="stylesheet" href="./src/assets/css/style.css" />
   </head>
@@ -18,14 +23,44 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <h1>hero</h1>
-      <h1>hero 2</h1>
+      <div
+        class="row container justify-content-center align-items-center gap-5 gap-md-3"
+      >
+        <!-- hero section content column  -->
+        <div class="content col-md-6">
+          <h6>Relax & Enjoy the Vacation</h6>
+          <h1>
+            Choose <span class="text-primary">Travelsy</span> To Book Your Hotel
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Hac consequat hac arcu sed.
+            Lectus ante ut in mattis ornare commodo nisi. Tortor tincidunt fames
+            quam fusce convallis eget pulvinar.
+          </p>
+          <button class="btn btn-primary rounded-5 py-2 px-3">
+            Make Reservation <i class="bi bi-calendar-fill ms-1"></i>
+          </button>
+        </div>
+
+        <!-- hero section image column -->
+        <div class="benner-image col-md-6 position-relative">
+         <div class="row d-flex align-items-center">
+          <div class="col-6 d-grid gap-3 justify-content-end">
+            <img src="./src/assets/image/Rectangle 14323.png" alt="">
+            <img src="./src/assets/image/Rectangle 14324.png" alt="">
+          </div>
+          <div class="col-6">
+            <img src="./src/assets/image/Rectangle 14325.png" alt="">
+          </div>
+         </div>
+         <div class="circel position-absolute">
+          <img src="./src/assets/image/Group 8742.png" alt="">
+         </div>
+      </div>
     </section>
 
     <!-- Booking From -->
-    <section class="booking-from">
-      <h1>Booking</h1>
-    </section>
+    <section class="booking-from"></section>
 
     <!-- About -->
     <section class="about"></section>
