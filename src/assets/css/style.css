@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Zeyada&display=swap");
 
-html{
+html {
   font-size: 62.5%;
 }
 
-.section-gap{
+.section-gap {
   margin-top: 10rem;
 }
 
@@ -23,22 +23,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .5s;
+  transition: all 0.5s;
+  padding: 10rem 0 0 0;
 }
 
-/* hero section content */
 .hero .content {
-  width: 450px;
+  width: 45rem;
 }
 
 .hero .content h6 {
   font-family: "Zeyada", cursive;
   font-weight: 600;
-  font-size: 18px;
-}
-
-.btn i {
-  font-size: 15px;
+  font-size: 1.8rem;
 }
 
 .hero .content h1 {
@@ -46,6 +42,19 @@ body {
   font-optical-sizing: auto;
   font-weight: bold;
   font-size: 45px;
+}
+
+.hero .content p {
+  font-size: 16px;
+}
+
+.hero .content .btn {
+  font-size: 2rem;
+  border-radius: 50px !important;
+}
+
+.content .btn i {
+  font-size: 1.6rem;
 }
 
 .hero .benner-image .circel {
@@ -57,8 +66,8 @@ body {
 }
 
 .hero .benner-image .circel img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -68,29 +77,29 @@ body {
 }
 
 /* Booking From start */
-.booking-from .input-aria{
-  border: 0.25rem solid #C8DEFB;
+.booking-from .input-aria {
+  border: 0.25rem solid #c8defb;
 }
-.booking-from .input-aria input{
+.booking-from .input-aria input {
   font-weight: 600;
 }
-.booking-from .button-aria button{
+.booking-from .button-aria button {
   font-weight: 600;
   font-size: 2.3rem;
-  background-color: #4691F2;
+  background-color: #4691f2;
   color: white;
 }
-.booking-from .button-aria button i{
+.booking-from .button-aria button i {
   font-weight: 600;
   font-size: 2.3rem;
   color: white;
 }
 
 @media only screen and (max-width: 992px) {
-  .booking-from .container{
+  .booking-from .container {
     border-radius: 45px !important;
   }
-  html{
+  html {
     font-size: 50.5%;
   }
 }
