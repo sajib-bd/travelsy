@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries, observer) => {
   });
 });
 
-//   hero Section animation
+// hero Section animation
 const heroTitle = document.querySelector(".hero-title");
 observer.observe(heroTitle);
 
@@ -33,4 +33,14 @@ observer.observe(heroImg3);
 
 const heroCircle = document.querySelector(".hero-circle");
 observer.observe(heroCircle);
+// hero section animation end
 
+// Hotel booking section Animation
+const BookingTitle = document.querySelector(".booking-title");
+observer.observe(BookingTitle)
+
+const BookingHeader = document.querySelector(".booking-header");
+observer.observe(BookingHeader)
+
+const BookingCard = document.querySelectorAll(".booking-card");
+BookingCard.forEach((card) => observer.observe(card))
