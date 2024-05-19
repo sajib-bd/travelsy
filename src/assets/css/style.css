@@ -10,7 +10,7 @@ html {
   margin-top: 10rem;
 }
 
-/* common css end */
+/* =================common css end ============*/
 
 body {
   background: url(../image/map\ image.png);
@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
-/* hero section css style */
+/* ==============hero section css style================= */
 .hero {
   display: flex;
   justify-content: center;
@@ -47,7 +47,7 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 4.5rem;
   transform: translateX(-15rem);
   transition: 0.8s;
 }
@@ -125,6 +125,8 @@ body {
   }
 }
 
+/* ================Hero Section End================== */
+
 /* Booking From start */
 .booking-from .input-aria {
   border: 0.25rem solid #c8defb;
@@ -154,32 +156,183 @@ body {
 }
 
 /* Booking From end */
-.about .wrapper h5{
+.about .wrapper h5 {
   font-family: "Zeyada", cursive;
   font-size: 2.5rem;
   font-weight: 500;
-  color: #4691F2;
+  color: #4691f2;
 }
-.about .wrapper h3{
+.about .wrapper h3 {
   font-size: 5rem;
-  color: #1A1313;
+  color: #1a1313;
 }
-.about .wrapper p{
+.about .wrapper p {
   font-size: 1.8rem;
-  color: #6C6C6C;
+  color: #6c6c6c;
   font-weight: 400;
 }
 
 /* Booking From end */
 
 /* ===========about start=========== */
-.wrapper .mark-text h4{
-   font-size: 2rem;
-   color: #1A1313;
+.wrapper .mark-text h4 {
+  font-size: 2rem;
+  color: #1a1313;
 }
-.wrapper .button-box a{
-   font-size: 2rem;
-   
+.wrapper .button-box a {
+  font-size: 2rem;
 }
 
 /* ===========about From end=========== */
+
+/* =============Hotel Booking============*/
+.hotel-booking {
+  padding: 10rem 0;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(70, 145, 242, 0.1),
+    rgba(70, 145, 242, 0)
+  );
+}
+
+.hotel-booking .booking-title {
+  font-family: "Zeyada", cursive;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #4691f2;
+  transition: 0.8s;
+  text-align: center;
+  transform: translateY(-8rem);
+  transition: 0.8s;
+}
+
+.hotel-booking .booking-title.animation {
+  transform: translate(0);
+}
+
+.hotel-booking .booking-header {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 4.4rem;
+  text-align: center;
+  transition: 0.8s;
+  transform: scale(0);
+}
+
+.hotel-booking .booking-header.animation {
+  transform: scale(1);
+}
+
+.hotel-booking .group-box .card {
+  width: 35rem;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  background-color: white;
+  transition: 0.8s all;
+}
+
+.hotel-booking .group-box .card:nth-child(1) {
+  transform: translateY(-15rem) translateX(-10rem);
+}
+.hotel-booking .group-box .card:nth-child(2) {
+  transform: translateX(18rem) translateY(-15rem);
+}
+.hotel-booking .group-box .card:nth-child(3) {
+  transform: translateY(15rem) translateX(10rem);
+}
+
+.hotel-booking .group-box .card.animation {
+  transform: translate(0);
+}
+
+@media only screen and (max-width: 565px) {
+  .hotel-booking .group-box .card:nth-child(odd) {
+    transform: translateX(-10rem) translateY(0);
+  }
+  .hotel-booking .group-box .card:nth-child(even) {
+    transform: translateX(10rem) translateY(0);
+  }
+  .hotel-booking .group-box .card.animation {
+    transform: translate(0);
+  }
+}
+
+.hotel-booking .group-box .card .card-title {
+  font-size: 2.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+.hotel-booking .group-box .card i {
+  color: rgba(70, 145, 242, 1);
+}
+
+.hotel-booking .group-box .card .map-user .map {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+}
+
+.hotel-booking .group-box .card .map-user .user {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+}
+
+.hotel-booking .group-box .card .price-buy h3 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.hotel-booking .group-box .card .price-buy h3 span {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.hotel-booking .group-box .card .price-buy .buy {
+  height: 4.4rem;
+  width: 4.4rem;
+  background-color: rgba(70, 145, 242, 1);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.hotel-booking .group-box .card .price-buy .buy i {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.hotel-booking .arrow-center {
+  width: 100%;
+  margin: 4rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotel-booking .arrow {
+  width: 10.6rem;
+  height: 4.8rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: rgba(70, 145, 242, 1);
+  font-size: 2rem;
+  background-color: white;
+  box-shadow: 0 0 0.2rem black;
+}
+
+.hotel-booking .arrow i {
+  cursor: pointer;
+}
+/* =================Hotel Booking End====================== */
