@@ -57,7 +57,7 @@ body {
 }
 
 .hero .content .hero-paragraph {
-  font-size: 16px;
+  font-size: 1.6rem;
   transform: translateY(10rem);
   transition: 0.8s;
 }
