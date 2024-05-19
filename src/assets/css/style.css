@@ -5,6 +5,26 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 52.5%;
+    scroll-behavior: smooth;
+  }
+}
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 42.5%;
+    scroll-behavior: smooth;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 38.5%;
+    scroll-behavior: smooth;
+  }
+}
+
+
 
 .section-gap {
   margin-top: 10rem;
@@ -155,7 +175,7 @@ body {
   }
 }
 
-/* Booking From end */
+/* Booking From start */
 .about .wrapper h5 {
   font-family: "Zeyada", cursive;
   font-size: 2.5rem;
@@ -175,6 +195,13 @@ body {
 /* Booking From end */
 
 /* ===========about start=========== */
+.img-wrapper .image-box{
+  width: 60%;
+}
+.img-wrapper .image-group{
+  width: 32%;
+}
+
 .wrapper .mark-text h4 {
   font-size: 2rem;
   color: #1a1313;
