@@ -1,10 +1,133 @@
 @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Zeyada&display=swap");
+/* common css starts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul,
+p {
+  margin-bottom: 0;
+}
+ul li {
+  list-style: none;
+}
+
+/* common css ends */
+
+/* navigation section starts */
+
+.contact-section {
+  background-color: #4691f2;
+  height: 5rem;
+  color: white;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto;
+
+  align-items: center;
+}
+.contact-section a {
+  color: white;
+}
+.login-social-section {
+  width: 100%;
+  min-height: 5rem;
+  background-color: black;
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+  margin-left: auto;
+}
+.vertical-line {
+  border: 2px solid white;
+  height: 3rem;
+  margin-left: 16px;
+}
+.login-social-section i {
+  height: 5rem;
+  width: auto;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 4px 6px;
+  color: #4691f2;
+  background-color: white;
+}
+
+.nav-tab-section {
+  font-size: 1.5rem;
+  color: #6c6c6c;
+  font-weight: bold;
+}
+.nav-tab-section a {
+  color: #6c6c6c;
+}
+.nav-tab-section ul li {
+  display: inline-block;
+  position: relative;
+}
+.nav-tab-section ul li:hover:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  background: #4691f2;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  left: calc(50% - 5px);
+}
+.nav-tab-section ul li a:hover {
+  color: #4691f2;
+}
+
+.search-button {
+  border: 1px solid #4691f2;
+  border-radius: 20px;
+  padding: 2px 6px;
+}
+.search-button i {
+  color: #4691f2;
+}
+.contact-us-btn button {
+  background-color: #4691f2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 500;
+}
+/* navigation section ends */
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 52.5%;
+    scroll-behavior: smooth;
+  }
+}
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 42.5%;
+    scroll-behavior: smooth;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 38.5%;
+    scroll-behavior: smooth;
+  }
+}
+
+
 
 .section-gap {
   margin-top: 10rem;
@@ -155,7 +278,7 @@ body {
   }
 }
 
-/* Booking From end */
+/* Booking From start */
 .about .wrapper h5 {
   font-family: "Zeyada", cursive;
   font-size: 2.5rem;
@@ -175,6 +298,13 @@ body {
 /* Booking From end */
 
 /* ===========about start=========== */
+.img-wrapper .image-box{
+  width: 60%;
+}
+.img-wrapper .image-group{
+  width: 32%;
+}
+
 .wrapper .mark-text h4 {
   font-size: 2rem;
   color: #1a1313;
