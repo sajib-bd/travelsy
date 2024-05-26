@@ -9,6 +9,42 @@ const observer = new IntersectionObserver((entries, observer) => {
   });
 });
 
+// navbar section starts
+const hamburger = document.querySelector(".hamburger");
+const navLink = document.querySelector(".nav__link");
+
+hamburger.addEventListener("click", () => {
+  navLink.classList.toggle("hide");
+});
+
+const NavOpen = document.querySelector(".bi-list");
+
+NavOpen.addEventListener("click", () => {
+  NavOpen.classList.toggle("bi-text-indent-right");
+});
+
+NavOpen.addEventListener("click", () => {
+  navLink.classList.add("NavTran");
+});
+
+function checkScroll() {
+  var startY = $(".nav-links-section").height() * 2; //The point where the navbar changes in px
+
+  if ($(window).scrollTop() > startY) {
+    $(".nav-links-section").addClass("scrolled");
+  } else {
+    $(".nav-links-section").removeClass("scrolled");
+  }
+}
+
+if ($(".nav-links-section").length > 0) {
+  $(window).on("scroll load resize", function () {
+    checkScroll();
+  });
+}
+
+// navbar section ends
+
 // hero Section animation
 const heroTitle = document.querySelector(".hero-title");
 observer.observe(heroTitle);
@@ -37,10 +73,10 @@ observer.observe(heroCircle);
 
 // Hotel booking section Animation
 const BookingTitle = document.querySelector(".booking-title");
-observer.observe(BookingTitle)
+observer.observe(BookingTitle);
 
 const BookingHeader = document.querySelector(".booking-header");
-observer.observe(BookingHeader)
+observer.observe(BookingHeader);
 
 const BookingCard = document.querySelectorAll(".booking-card");
-BookingCard.forEach((card) => observer.observe(card))
+BookingCard.forEach((card) => observer.observe(card));

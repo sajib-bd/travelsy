@@ -80,13 +80,15 @@ ul li {
 }
 
 .nav-tab-section {
+  display: flex;
   font-size: 1.5rem;
   color: #6c6c6c;
   font-weight: bold;
-  display: flex;
   margin-top: 2rem;
   gap: 1rem;
+  transition: all 0.8s ease-out;
 }
+
 .nav-tab-section a {
   color: #6c6c6c;
 }
@@ -124,6 +126,9 @@ ul li {
   border: none;
   font-weight: 500;
 }
+.hamburger {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   .contact-section {
@@ -135,12 +140,35 @@ ul li {
   .nav-tab-section {
     flex-direction: column;
     padding: 20px;
+    align-items: center;
+    transition: all 2s;
   }
+  .NavTran {
+    transition: all 2s ease-out;
+  }
+
   .contact-us-btn button {
     margin: 10px auto;
   }
   .search-button {
     margin: 10px auto;
+  }
+  .hamburger {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.9s;
+  }
+  .hamburger i {
+    font-size: 2.7rem;
+  }
+  .hide {
+    display: none;
+  }
+
+  .nav-links-section {
+    transition: all 2s ease;
   }
 }
 /* navigation section ends */
