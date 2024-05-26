@@ -54,3 +54,14 @@ observer.observe(BlogHeader);
 
 const BlogCard = document.querySelectorAll(".blog-card");
 BlogCard.forEach((card) => observer.observe(card));
+
+// call to action animation
+
+const CTAHeader = document.querySelector(".cta-header");
+observer.observe(CTAHeader);
+
+const CTAParagraph = document.querySelector(".cta-paragraph");
+observer.observe(CTAParagraph);
+
+const CTABtn = document.querySelector(".cta-btn");
+observer.observe(CTABtn);
