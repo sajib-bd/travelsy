@@ -553,6 +553,76 @@ body {
 /* =================Hotel Counter End====================== */
 
 /* =================Call to action Start====================== */
+.callToAction {
+  width: 100%;
+  background: url("../image/call-to-action.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10rem 0 0 0;
+}
+
+.callToAction .content {
+  margin: 8rem 0;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.callToAction .content .cta-header {
+  font-size: 4.4rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  transition: 0.8s;
+  transform: translateX(15rem);
+}
+
+.callToAction .content .cta-header.animation {
+  transform: translate(0);
+}
+
+.callToAction .content .cta-paragraph {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  transition: 0.8s;
+  transform: scale(0);
+}
+
+.callToAction .content .cta-paragraph.animation {
+  transform: scale(1);
+}
+
+.callToAction .content .cta-btn {
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1.5rem;
+  border: 0;
+  transition: 0.8s;
+  transform: translateX(-30rem);
+}
+
+.callToAction .content .cta-btn.animation {
+  transform: translateX(0);
+}
+
+.callToAction .content .cta-btn .btn-text {
+  color: #4691f2;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.callToAction .content .cta-btn .btn-icon {
+  font-size: 2rem;
+  color: #4691f2;
+}
+
 /* =================Call to action End====================== */
 
 /* =================Hotel blog Start====================== */
