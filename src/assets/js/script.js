@@ -37,10 +37,20 @@ observer.observe(heroCircle);
 
 // Hotel booking section Animation
 const BookingTitle = document.querySelector(".booking-title");
-observer.observe(BookingTitle)
+observer.observe(BookingTitle);
 
 const BookingHeader = document.querySelector(".booking-header");
-observer.observe(BookingHeader)
+observer.observe(BookingHeader);
 
 const BookingCard = document.querySelectorAll(".booking-card");
-BookingCard.forEach((card) => observer.observe(card))
+BookingCard.forEach((card) => observer.observe(card));
+
+// blog section Animation
+const BlogTitle = document.querySelector(".blog-title");
+observer.observe(BlogTitle);
+
+const BlogHeader = document.querySelector(".blog-header");
+observer.observe(BlogHeader);
+
+const BlogCard = document.querySelectorAll(".blog-card");
+BlogCard.forEach((card) => observer.observe(card));

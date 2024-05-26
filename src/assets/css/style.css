@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 /* common css starts */
 * {
   margin: 0;
@@ -261,6 +262,9 @@ body {
 
 @media only screen and (max-width: 768px) {
   .hero .content {
+    width: 100%;
+  }
+  .banner-image {
     width: 100%;
   }
 }
@@ -539,11 +543,122 @@ body {
   position: absolute;
   top: 2104.74px;
   left: 1392.22px;
-  width: 203.29px;
-  height: 645.66px;
+  width: 20.3rem;
+  height: 64.56rem;
   /* transform: rotate(135deg); */
   transform: rotate(45deg);
   background: linear-gradient(180deg, #4691f2 0%, rgba(70, 145, 242, 0) 100%);
 }
 
 /* =================Hotel Counter End====================== */
+
+/* =================Call to action Start====================== */
+/* =================Call to action End====================== */
+
+/* =================Hotel blog Start====================== */
+.blog {
+  margin: 10rem 0 0 0;
+  position: relative;
+}
+
+.blog .overlay {
+  position: absolute;
+  width: 20.3rem;
+  height: 64.56rem;
+  background: linear-gradient(180deg, #4691f2, #4691f200);
+  top: -8rem;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+.blog .blog-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  font-family: "Zeyada", cursive;
+  color: #4691f2;
+}
+
+.blog .blog-header {
+  font-size: 4.4rem;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.blog .card {
+  width: 35rem;
+  border-radius: 15px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.blog .card .card-title {
+  font-size: 2.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+.blog .card .card-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+}
+
+.blog .card .card-footer {
+  background-color: white;
+  border: 0;
+}
+
+.blog .card .card-footer .text {
+  color: #4691f2;
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: "Mulish", sans-serif;
+  cursor: pointer;
+}
+
+.blog .blog-title {
+  transition: 0.8s;
+  transform: scale(0);
+}
+
+.blog .blog-title.animation {
+  transform: scale(1);
+}
+
+.blog .blog-header {
+  transform: translateX(20rem);
+  transition: 0.8s;
+}
+
+.blog .blog-header.animation {
+  transform: translateX(0);
+}
+
+.blog .card:nth-child(odd) {
+  transform: translateY(-15rem);
+  transition: 0.8s;
+}
+
+.blog .card:nth-child(even) {
+  transform: translateY(15rem);
+  transition: 0.8s;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog .card:nth-child(odd) {
+    transform: translateX(-15rem);
+    transition: 0.8s;
+  }
+
+  .blog .card:nth-child(even) {
+    transform: translateX(15rem);
+    transition: 0.8s;
+  }
+}
+
+.blog .card.animation {
+  transform: translate(0);
+}
+
+/* =================Hotel blog End====================== */
