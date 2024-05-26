@@ -80,3 +80,24 @@ observer.observe(BookingHeader);
 
 const BookingCard = document.querySelectorAll(".booking-card");
 BookingCard.forEach((card) => observer.observe(card));
+
+// blog section Animation
+const BlogTitle = document.querySelector(".blog-title");
+observer.observe(BlogTitle);
+
+const BlogHeader = document.querySelector(".blog-header");
+observer.observe(BlogHeader);
+
+const BlogCard = document.querySelectorAll(".blog-card");
+BlogCard.forEach((card) => observer.observe(card));
+
+// call to action animation
+
+const CTAHeader = document.querySelector(".cta-header");
+observer.observe(CTAHeader);
+
+const CTAParagraph = document.querySelector(".cta-paragraph");
+observer.observe(CTAParagraph);
+
+const CTABtn = document.querySelector(".cta-btn");
+observer.observe(CTABtn);
