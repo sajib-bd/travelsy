@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Zeyada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 /* common css starts */
+
+/* Root Variable */
+:root {
+}
 * {
   margin: 0;
   padding: 0;
@@ -55,9 +59,11 @@ ul li {
 
   align-items: center;
 }
+
 .contact-section a {
   color: white;
 }
+
 .login-social-section {
   width: 100%;
   min-height: 5rem;
@@ -65,11 +71,13 @@ ul li {
   clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
   margin-left: auto;
 }
+
 .vertical-line {
   border: 2px solid white;
   height: 3rem;
   margin-left: 16px;
 }
+
 .login-social-section i {
   height: 5rem;
   width: auto;
@@ -82,6 +90,8 @@ ul li {
 
 .nav-tab-section {
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
   color: #6c6c6c;
   font-weight: bold;
@@ -93,10 +103,12 @@ ul li {
 .nav-tab-section a {
   color: #6c6c6c;
 }
+
 .nav-tab-section ul li {
   display: inline-block;
   position: relative;
 }
+
 .nav-tab-section ul li:hover:before {
   content: "";
   position: absolute;
@@ -107,6 +119,7 @@ ul li {
   border-radius: 100%;
   left: calc(50% - 5px);
 }
+
 .nav-tab-section ul li a:hover {
   color: #4691f2;
 }
@@ -116,9 +129,11 @@ ul li {
   border-radius: 20px;
   padding: 2px 6px;
 }
+
 .search-button i {
   color: #4691f2;
 }
+
 .contact-us-btn button {
   background-color: #4691f2;
   color: white;
@@ -127,6 +142,7 @@ ul li {
   border: none;
   font-weight: 500;
 }
+
 .hamburger {
   display: none;
 }
@@ -135,15 +151,18 @@ ul li {
   .contact-section {
     grid-template-columns: auto;
   }
+
   .login-social-section {
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
   }
+
   .nav-tab-section {
     flex-direction: column;
     padding: 20px;
     align-items: center;
     transition: all 2s;
   }
+
   .NavTran {
     transition: all 2s ease-out;
   }
@@ -151,9 +170,11 @@ ul li {
   .contact-us-btn button {
     margin: 10px auto;
   }
+
   .search-button {
     margin: 10px auto;
   }
+
   .hamburger {
     align-self: flex-end;
     display: initial;
@@ -161,15 +182,20 @@ ul li {
     cursor: pointer;
     transition: all 0.9s;
   }
+
   .hamburger i {
     font-size: 2.7rem;
   }
-  .hide {
-    display: none;
-  }
 
   .nav-links-section {
-    transition: all 2s ease;
+    transition: 0.8s;
+    transform: translateY(-60rem);
+    max-height: 0;
+  }
+
+  .nav-links-section.active {
+    transform: translateY(0);
+    max-height: 40rem;
   }
 }
 /* navigation section ends */
@@ -347,6 +373,16 @@ body {
 /* Booking From end */
 
 /* ===========about start=========== */
+.about .overlay {
+  position: absolute;
+  width: 20.3rem;
+  height: 64.56rem;
+  background: linear-gradient(180deg, #4691f2, #4691f200);
+  top: -13rem;
+  left: 0rem;
+  transform: rotate(-45deg);
+  z-index: -10;
+}
 .img-wrapper .image-box {
   width: 60%;
 }
@@ -579,6 +615,121 @@ body {
 }
 
 /* =================Hotel Counter End====================== */
+
+/* ==================Testimonial Start====================== */
+
+.testimonials {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.testimonials .overlay {
+  position: absolute;
+  width: 20.3rem;
+  height: 64.56rem;
+  background: linear-gradient(180deg, #4691f2, #4691f200);
+  top: -8rem;
+  left: 5rem;
+  transform: rotate(-45deg);
+}
+
+.testimonials .tml-title {
+  color: #4691f2;
+  font-size: 2.4rem;
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+}
+
+.testimonials .tml-header {
+  color: #000000;
+  font-size: 4.4rem;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.testimonials .tml-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.tml-group .tml-small-img {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 2rem;
+}
+
+.tml-small-img .tml-img:nth-child(even) {
+  transition: 0.8s;
+  transform: translateX(15rem);
+}
+
+.tml-small-img .tml-img:nth-child(odd) {
+  transition: 0.8s;
+  transform: translateX(-15rem);
+}
+
+.tml-group .tml-group-text {
+  position: relative;
+  display: flex;
+}
+
+.tml-group .tml-group-text .text {
+  margin-left: 3rem;
+}
+
+.tml-group .tml-group-text h4 {
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.tml-group .tml-group-text h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+}
+
+.tml-group .tml-group-text p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+  max-width: 38rem;
+  margin-top: 3rem;
+}
+
+.tml-group-text .btn {
+  height: 50px;
+  width: 50px;
+  background-color: #4691f2;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+.tml-group-text .btn i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonials .tml-group {
+    flex-direction: column;
+  }
+
+  .tml-group .tml-group-text .text {
+    padding-top: 4rem;
+  }
+}
+
+/*==================Testimonial End====================== */
 
 /* =================Call to action Start====================== */
 .callToAction {
