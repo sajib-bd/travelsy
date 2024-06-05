@@ -911,3 +911,38 @@ body {
 }
 
 /* =================Hotel blog End====================== */
+
+/* footer starts */
+.footer-column {
+  padding: 6rem 0;
+}
+footer .container {
+  max-width: 72%;
+  justify-content: center;
+  align-items: center;
+}
+.footer-column ul {
+  padding: 0;
+}
+
+.footer-column i {
+  border: 1px solid #4691f2;
+  border-radius: 20px;
+  padding: 3px 5px;
+  color: white;
+  background-color: #4691f2;
+  font-size: 1rem;
+}
+
+.footer-column ul li a {
+  color: #6c6c6c;
+  font-size: 1.2rem;
+}
+.footer-contact li {
+  padding-bottom: 0.8rem;
+}
+.footer-contact li i {
+  margin-right: 0.5rem;
+}
+
+/* footer ends */
