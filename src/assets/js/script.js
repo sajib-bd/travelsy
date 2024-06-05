@@ -11,37 +11,13 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 // navbar section starts
 const hamburger = document.querySelector(".hamburger");
-const navLink = document.querySelector(".nav__link");
-
-hamburger.addEventListener("click", () => {
-  navLink.classList.toggle("hide");
-});
-
+const navLink = document.querySelector(".nav-links-section");
 const NavOpen = document.querySelector(".bi-list");
 
-NavOpen.addEventListener("click", () => {
+hamburger.addEventListener("click", () => {
   NavOpen.classList.toggle("bi-text-indent-right");
+  navLink.classList.toggle("active");
 });
-
-NavOpen.addEventListener("click", () => {
-  navLink.classList.add("NavTran");
-});
-
-function checkScroll() {
-  var startY = $(".nav-links-section").height() * 2; //The point where the navbar changes in px
-
-  if ($(window).scrollTop() > startY) {
-    $(".nav-links-section").addClass("scrolled");
-  } else {
-    $(".nav-links-section").removeClass("scrolled");
-  }
-}
-
-if ($(".nav-links-section").length > 0) {
-  $(window).on("scroll load resize", function () {
-    checkScroll();
-  });
-}
 
 // navbar section ends
 
